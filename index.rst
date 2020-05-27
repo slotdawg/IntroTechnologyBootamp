@@ -2,20 +2,13 @@
 
 .. toctree::
   :maxdepth: 2
-  :caption: Nutanix Configuration
-  :name: _nutanix_configuration
+  :caption: Labs
+  :name: _labs
   :hidden:
 
   lab_nutanix_tech_overview/lab_nutanix_tech_overview
   lab_storage_configuration/lab_storage_configuration
   lab_network_configuration/lab_network_configuration
-
-.. toctree::
-  :maxdepth: 2
-  :caption: Deploying and Managing Workloads
-  :name: _deploying_and_managing_workloads
-  :hidden:
-
   lab_deploy_workloads/lab_deploy_workloads
 
 .. toctree::
