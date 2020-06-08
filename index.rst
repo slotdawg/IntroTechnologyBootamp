@@ -11,6 +11,7 @@
   lab_network_configuration/lab_network_configuration
   lab_deploy_workloads/lab_deploy_workloads
   lab_data_protection/lab_data_protection
+  prism_central_overview/prism_central_overview
 
 .. toctree::
   :maxdepth: 2
