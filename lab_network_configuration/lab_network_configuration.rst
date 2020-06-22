@@ -71,7 +71,7 @@ Connect to Prism Element and create a network for user VM interfaces. Use any VL
 #. Fill out the following fields and click **Save**:
 
    - **Name** - *Initials*-Network
-   - **VLAN ID** - A value (< 4096) other than your **Primary** or **Secondary** network VLANs
+   - **VLAN ID** - 1008
    - Do not select **Enable IP Address Management**
 
    The final result should look like the image below.
@@ -88,7 +88,7 @@ Create another network, but this time enable IPAM.
 #. Fill out the following fields and click **Save**:
 
    - **Name** - *Initials*-Network_IPAM
-   - **VLAN ID** - A value (< 4096) other than your **Primary** or **Secondary** network VLANs
+   - **VLAN ID** - 1108
    - Select **Enable IP Address Management**
    - **Network IP Address / Prefix Length** - 10.0.0.0/24
    - **Gateway** - 10.0.0.1

@@ -36,7 +36,7 @@ In this exercise you will create a CentOS VM from an existing, pre-installed dis
    - Select **+ Add New Disk**
       - **Type** - DISK
       - **Operation** - Clone from Image Service
-      - **Image** - CentOS7.qcow2
+      - **Image** - CentOS-7-x86_64-1810.qcow2
       - Select **Add**
       - **Boot Configuration**
       - Leave the default selected **Legacy Boot**
@@ -44,7 +44,7 @@ In this exercise you will create a CentOS VM from an existing, pre-installed dis
     *This will create a thin clone of the existing CentOS disk image*
 
    - Select **Add New NIC**
-      - **VLAN Name** - Primary
+      - **VLAN Name** - production
       - Select **Add**
 
    .. figure:: images/deploy_workloads_03.png
