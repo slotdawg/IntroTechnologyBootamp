@@ -57,34 +57,10 @@ Introductions
 - Name
 - Familiarity with Nutanix
 
-Initial Setup
-+++++++++++++
+Cluster Information
++++++++++++++++++++
 
-- Take note of the *Passwords* being used.
-- Log into your virtual desktops (connection info below)
-
-
-Credentials
-+++++++++++
-
-.. note::
-
-  The *<Cluster Password>* is unique to each cluster and will be provided by the leader of the Workshop.
-
-.. list-table::
-   :widths: 25 35 40
-   :header-rows: 1
-
-   * - Credential
-     - Username
-     - Password
-   * - Prism Element
-     - admin
-     - *<Cluster Password>*
-   * - Prism Central
-     - admin
-     - *<Cluster Password>*
-
+You should have received an email with the Cluster link.
 
 Nutanix Version Info
 ++++++++++++++++++++

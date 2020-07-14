@@ -33,6 +33,8 @@ In this exercise you will create a CentOS VM from an existing, pre-installed dis
    - **Number of Cores per vCPU** - 1
    - **Memory** - 2 GiB
 
+   .. figure:: images/deploy_workloads_03b.png
+
    - Select **+ Add New Disk**
       - **Type** - DISK
       - **Operation** - Clone from Image Service
@@ -43,11 +45,13 @@ In this exercise you will create a CentOS VM from an existing, pre-installed dis
 
     *This will create a thin clone of the existing CentOS disk image*
 
+   .. figure:: images/deploy_workloads_03c.png
+
    - Select **Add New NIC**
       - **VLAN Name** - production
       - Select **Add**
 
-   .. figure:: images/deploy_workloads_03.png
+   .. figure:: images/deploy_workloads_03d.png
 
 #. Click **Save** to create the VM.
 
