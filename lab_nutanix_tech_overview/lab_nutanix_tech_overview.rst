@@ -16,6 +16,8 @@ The Prism service provides the web UI for managing Nutanix clusters and runs on 
 
 #. Click on the **AOSonGCP** cluster in quick links to take you into the clusters Prism Element.
 
+   .. figure:: images/nutanix_tech_overview_01b.png
+
 #. Review the Home screen, and identify the following items:
 
    - Hypervisor
