@@ -105,7 +105,11 @@ Block Awareness, in a sufficiently large cluster, ensures that secondary copies 
 
 The basic requirement for rack/block fault tolerance is to have minimum 3 blocks in the cluster (for RF2) as we need to store 3 copies of metadata. Starting in AOS 5.8, rack and block awareness can be supported with erasure coding enabled.
 
-#. In **Prism > Home**, click **OK** in the **Data Resiliency Status** box.
+#. In **Prism > Home**, click **OK** or **Critical** in the **Data Resiliency Status** box.
+
+.. note::
+
+   Note in Test Drive because we use a single node cluster, Data Resiliency Status will report as **Critical** which is expected since we do not have any redundancy in the cluster. In a normal Nutanix cluster with 3 or more nodes, this box will report as **OK**
 
 .. figure:: images/storage_config_03.png
 

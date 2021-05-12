@@ -28,11 +28,11 @@ The Prism service provides the web UI for managing Nutanix clusters and runs on 
    - Warning Alerts
    - Data Resiliency Status
 
-   .. figure:: images/nutanix_tech_overview_02.png
+   .. figure:: images/pe_overview.png
 
 #. Review the UI navigation options under the **View Options** pull-down menu. The label of this menu changes based on the dashboard that is currently displayed. For example, from the Home dashboard it will be labeled **Home**, from the Health dashboard it will be labeled **Health**, etc.
 
-   .. figure:: images/nutanix_tech_overview_03.png
+   .. figure:: images/pe_menu.png
 
 #. Examine the cluster hardware under **Prism > Hardware**, click **Hardware**, then click **Diagram**.
 
@@ -44,7 +44,7 @@ The Prism service provides the web UI for managing Nutanix clusters and runs on 
    - CPU
    - Disks
 
-   .. figure:: images/nutanix_tech_overview_04.png
+   .. figure:: images/pe_hw.png
 
 #. Review the other sections, and do a quick walk through:
 
@@ -66,7 +66,7 @@ The Prism service provides the web UI for managing Nutanix clusters and runs on 
    - Configuration :fa:`cog`
    - User :fa:`user`
 
-   .. figure:: images/nutanix_tech_overview_05.png
+   .. figure:: images/pe_top_bar.png
 
 Prism Element UI Review
 .......................
@@ -79,19 +79,19 @@ You can do this by clicking on the **User** drop down :fa:`user`, and clicking *
 
 How would you get to the following screen to view a summary of the number of hosts (or nodes) and the resource capacity and current utilization?
 
-.. figure:: images/nutanix_tech_overview_07.png
+.. figure:: images/pe_hosts.png
 
 In **Prism > Hardware**, click **Hardware**, then click **Table**.
 
 How would you get the following screen to see the health of your cluster?
 
-.. figure:: images/nutanix_tech_overview_08.png
+.. figure:: images/pe_health.png
 
 In **Prism > Health**, click **Health**, then click **Summary** in the right pane.
 
 What page would show you the latest activity in the system? On this page, you can monitor the progress of any task and keep track of what has been done in the past using time stamps. Can you figure out two different ways to get there?
 
-.. figure:: images/nutanix_tech_overview_09.png
+.. figure:: images/pe_tasks.png
 
 From the View Options menu, select **Tasks**, or click the circle :fa:`circle-o` icon in the toolbar, to the right of the bell icon :fa:`bell`.
 

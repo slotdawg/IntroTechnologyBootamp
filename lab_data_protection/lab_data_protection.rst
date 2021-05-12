@@ -60,7 +60,7 @@ Protection Domains
 
    .. note::
 
-      Synchronous replication (Metro Availability) is currently support on ESXi. It will be supported in AHV in a future release.
+      As of AOS 5.17.1 and newer, synchronous replication is supported with AHV but only when using 2 Prism Centrals. Near-sync is supported with a single Prism Central, but will not be available in the Test Drive environment. For more information, review the `General Requirements of Leap <https://portal.nutanix.com/page/documents/details?targetId=Xi-Leap-Admin-Guide-master:dra-draas-requirements-pc-r.html>`_
 
 #. When opening the Data Protection context of the menu a warning screen will appear. Click on the **OK** button to move forward.
 

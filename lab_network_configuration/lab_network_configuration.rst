@@ -31,7 +31,6 @@ Virtual Networks
 - Physical switch port must be configured to trunk VLAN
 
 .. figure:: images/network_config_01.png
-.. figure:: images/network_config_001.png
 
 Virtual NICs of VMs
 ...................
@@ -57,52 +56,23 @@ Configure Network
 
 .. note::
 
-   In the following exercise you will create networks using invalid VLANs, meaning no VM traffic will be transmitted outside of an individual host. This is expected as the exercise is for demonstration/education purposes only.
+   In the following exercise you will emulate creating networks in Prism, however you will not be able to actually create the network due to how the emulated networking is configured within Test Drive. This is expected as the exercise is for demonstration/education purposes only.
 
 Setup User VM Network
 .....................
 
-Connect to Prism Element and create a network for user VM interfaces. Use any VLAN other than 0, and do not enable IP address management.
+Connect to Prism Element and create a network for user VM interfaces.
 
 #. In **Prism Element > VM**, click **VMs**, then click **Network Config**.
 
 #. Select **VM Networks**, then click **+ Create Network**.
 
-#. Fill out the following fields and click **Save**:
+#. Observe the available fields and click **Cancel**:
 
-   - **Name** - *Initials*-Network
-   - **VLAN ID** - 1008
-   - Do not select **Enable IP Address Management**
+.. figure:: images/pe_network.png
 
-   The final result should look like the image below.
+   The configured virtual network will now be available across all nodes within the cluster. Virtual networks in AHV behave like Distributed Virtual Switches in ESXi, meaning you do not need to configure the same settings on each individual host within the cluster. When creating VMs in IPAM managed networks, the IP can optionally be manually specified during vNIC creation. Nutanix AHV also fully supports IPAM to allocate DHCP addresses automatically.
 
-   .. figure:: images/network_config_04.png
-
-   The configured virtual network will now be available across all nodes within the cluster. Virtual networks in AHV behave like Distributed Virtual Switches in ESXi, meaning you do not need to configure the same settings on each individual host within the cluster. When creating VMs in IPAM managed networks, the IP can optionally be manually specified during vNIC creation.
-
-Setup User VM Network with IPAM
-...............................
-
-Create another network, but this time enable IPAM.
-
-#. Fill out the following fields and click **Save**:
-
-   - **Name** - *Initials*-Network_IPAM
-   - **VLAN ID** - 1108
-   - Select **Enable IP Address Management**
-   - **Network IP Address / Prefix Length** - 10.0.0.0/24
-   - **Gateway** - 10.0.0.1
-   - Do not select **Configure Domain Settings**
-   - **Create Pool** - 10.0.0.100-10.0.0.150
-   - Do not select **Override DHCP Server**
-
-   .. figure:: images/network_config_03.png
-
-   .. note::
-
-     It is possible to create multiple pool ranges for a network.
-
-   The configured virtual network will now be available across all nodes within the cluster. VMs with vNICs on this network will receive a DHCP address from the range specified. This IP assignment lasts for the life of the VM, avoiding the need to depend on DHCP reservations or static IPs for many workloads.
 
 Takeaways
 +++++++++

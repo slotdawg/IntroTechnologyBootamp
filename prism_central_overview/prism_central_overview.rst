@@ -12,14 +12,7 @@ This lab will introduce the Prism Central UI, and familiarize you with its layou
 Prism Central
 +++++++++++++
 
-#. Open https://<*Prism-Central-IP*>:9440
-
-#. Fill out the following fields and click **Enter**:
-
-- **Username** - admin
-- **Password** - *HPOC Password*
-
-#. After you log in to Prism Central, familiarize yourself with the Prism UI.
+#. Return to the original Test Drive Tab called "Prism Central"
 
 #. Explore the information on the **Home** screen:
 
@@ -28,16 +21,13 @@ Prism Central
 - Impacted Cluster | Alerts
 - tasks
 
-#. Review the **Explore** screen:
+#. Click the Hamburger Menu on the top left and select **Virtual Infrastructure**. The menu will expand letting select a submenu, such as VMs, Storage Containers, Catalog Items, etc
 
-- VMs
-- Images
-- Clusters
-- Hosts
-- Disks
-- Storage Containers
+.. figure:: images/pc_virtual_infra.png
 
-.. figure:: images/nutanix_tech_overview_10.png
+#. Click on **VMs**. Note how all VMs on all clusters managed by this prism central instance appears. Also note how the search bar in the top left has been auto-populated with a list, filtering on type "User VM." This search query can be modified to list all VMs (click the **X** next to the filter VM Type=User VM). The search bar can be used to filter results for all entities that Prism Central Manages (eg. Hosts, Containers, Networks, etc)
+
+.. figure:: images/pc_vms_list.png
 
 #. Review the other sections, and do a quick walk through:
 
@@ -57,23 +47,19 @@ Prism Central UI Review
 
 How would you find the screen that shows you a table of all the hosts managed by an instance of Prism Central?
 
-.. figure:: images/nutanix_tech_overview_11.png
+.. figure:: images/pc_hosts_list.png
 
 .. note::
 
-  If this Prism Central instance was managing multiple clusters, this screen would show the hosts for all of the clusters being managed.
+  Because this Test Drive Prism Central instance is managing multiple clusters, this screen shows the hosts for all of the clusters being managed.
 
-#. In **Prism Central > Explore**, click **Hosts** on left-hand menu.
+#. In **Prism Central select the Hamburger menu in the top left, then select **Hardware > Clusters**.
 
-How would you find the screen that lists all of the VMs currently deployed. This screen looks similar to the figure below?
-
-.. figure:: images/nutanix_tech_overview_12.png
-
-#. In **Prism Central > Explore**, click **VMs** on left-hand menu.
+.. figure:: images/pc_clusters_list.png
 
 What page would show you the latest activity in the system? On this page, you can monitor the progress of any task and keep track of what has been done in the past using time stamps. Can you figure out two different ways to get there?
 
-#. First Way, In **Prism Central > Home**, click **View All Tasks**. Second Way, click :fa:`circle-o`
+#. First Way, click the Hamburger menu **Activity > Tasks**. Second Way, click :fa:`circle-o` then choose "View All Tasks"
 
 .. note::
 

@@ -37,8 +37,8 @@ What's New
 ++++++++++
 
 - Workshop updated for the following software versions:
-    - AOS 5.11.x
-    - PC 5.11.x
+    - AOS 5.17.x
+    - PC 2020.7
 
 - Optional Lab Updates:
 
@@ -65,6 +65,6 @@ You should have received an email with the Cluster link.
 Nutanix Version Info
 ++++++++++++++++++++
 
-- **AHV Version** - AHV 20170830.337
-- **AOS Version** - 5.11.x/5.15.x/5.16.x/5.17.x
-- **PC Version** - 5.17.0.3
+- **AHV Version** - AHV 20170830.122
+- **AOS Version** - 5.17.x
+- **PC Version** - 2020.7
